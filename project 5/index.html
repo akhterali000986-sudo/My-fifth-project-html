@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Data Collection Form</title>
+</head>
+<body>
+
+    <center>
+        <h2 style="background-color: yellow; display: inline-block;">Student Data Collection Form</h2>
+        <p><strong>Please fill all the details carefully.</strong> <i>All fields are mandatory.</i> <u>Make sure information is correct.</u></p>
+    </center>
+
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label>Full Name:</label> <input type="text" placeholder="Enter your full name"><br><br>
+            <label>Email:</label> <input type="email" placeholder="Enter your email"><br><br>
+            <label>Password:</label> <input type="password" placeholder="Enter password"><br><br>
+            <label>Age:</label> <input type="number" style="width: 40px;"><br><br>
+            <label>Date of Birth:</label> <input type="date"><br><br>
+            <label>Upload Photo:</label> <input type="file">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Academic Information</legend>
+            <label>Branch:</label> 
+            <input type="radio" name="branch"> BCA 
+            <input type="radio" name="branch"> B.Tech <br><br>
+            
+            <label>Skills:</label>
+            <input type="checkbox"> HTML 
+            <input type="checkbox"> CSS 
+            <input type="checkbox"> JavaScript 
+            <input type="checkbox"> Python <br><br>
+
+            <label>Select Year:</label>
+            <select>
+                <option>--Select Year--</option>
+                <option>1st Year</option>
+                <option>2nd Year</option>
+                <option>3rd Year</option>
+                <option>4th Year</option>
+            </select><br><br>
+
+            <label>Portfolio URL:</label> <input type="url" placeholder="https://example.com"><br><br>
+            
+            <label>Study Time:</label>
+            <select>
+                <option>Select Time</option>
+                <option>Morning</option>
+                <option>Evening</option>
+            </select><br><br>
+
+            <label>Preferred Week:</label> <input type="week"><br><br>
+            <label>Preferred Month:</label> <input type="month"><br><br>
+            <label>Date & Time of Admission:</label> <input type="datetime-local">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Feedback Section</legend>
+            <label>Rate Your HTML Knowledge (0-10):</label> 
+            <input type="range" min="0" max="10" value="5"><br><br>
+            
+            <label>Write Your Feedback:</label><br>
+            <textarea rows="4" cols="50" placeholder="Write your feedback here..."></textarea><br><br>
+            
+            <p><mark>Note:</mark> Range is between 0 to 10.</p>
+        </fieldset>
+
+        <br>
+
+        <center>
+            <input type="submit" value="Submit Form"> 
+            <input type="reset" value="Reset Form">
+        </center>
+    </form>
+
+    <hr>
+    <center>
+        <h3>Thank you for registering! <i>We will contact you soon.</i></h3>
+    </center>
+
+</body>
+</html>
